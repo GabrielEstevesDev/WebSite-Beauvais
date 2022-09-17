@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "InterB";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "InterL";
+  src: url(../fonts/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "OpenL";
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: "MerriI";
+  src: url(../fonts/Merriweather-LightItalic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+body {
+  background: url(../img/bg.png) fixed center/cover;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+}
+
+.title {
+  font-family: "InterB", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sub-title {
+  font-family: "InterL", sans-serif;
+}
+
+p {
+  color: #2e2d2d;
+  font-family: "OpenL", sans-serif;
+  line-height: 25px;
+}
+
+.btn {
+  width: 180px;
+  background: white;
+  font-family: "InterB", serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+header {
+  min-height: 100vh;
+}
+header img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+header nav {
+  background: rgba(66, 66, 66, 0.322);
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -17px;
+}
+header nav a {
+  color: rgb(255, 255, 255);
+}
+header nav li {
+  padding: 25px 20px;
+  transition: 0.3s;
+}
+header nav .right-part, header nav .left-part {
+  display: flex;
+}
+header nav .left-part li {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+header nav .left-part li:hover {
+  background: white;
+}
+header nav .left-part li:hover a {
+  color: black;
+}
+header nav .right-part i {
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+header nav .right-part i:hover {
+  transform: scale(1.2);
+}
+
+main .container {
+  padding: 60px;
+  text-align: center;
+}
+main .container h1 {
+  font-family: "InterB", serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .container .map {
+  padding: 30px 0;
+  width: 50%;
+}
+main .container p {
+  width: 70%;
+  margin: 0 auto;
+}
+main .beauvais {
+  background: #737373;
+  display: flex;
+}
+main .beauvais .logoBeauvais {
+  height: 80px;
+}
+main .beauvais p {
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+}
+main .beauvais ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .beauvais ul li {
+  padding: 0 15px;
+}
+main .beauvais ul li a {
+  text-transform: uppercase;
+  color: white;
+}
+main .beauvais ul li:hover {
+  background: white;
+}
+main .beauvais ul li:hover a {
+  color: #737373;
+}/*# sourceMappingURL=index.css.map */
