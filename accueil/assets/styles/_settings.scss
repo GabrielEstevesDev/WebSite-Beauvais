@@ -34,13 +34,16 @@ li{
 a,a:visited {
     text-decoration: none;
 }
+li,a,i {
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
 body{
     background: url(../img/bg.png) fixed center/cover;
 }
-.page{
+#page{
     width: 80%;
     margin: 0 auto;
-    background: $white1;
 }
 
 .title{
