@@ -47,6 +47,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
 
 .sub-title {
   font-family: "InterL", sans-serif;
@@ -56,6 +61,12 @@ p {
   color: #2e2d2d;
   font-family: "OpenL", sans-serif;
   line-height: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  .p1 {
+    font-size: 0.9rem;
+  }
 }
 
 .btn {
@@ -77,14 +88,21 @@ header img {
   position: relative;
 }
 header h1 {
-  margin-top: 10%;
   font-family: "InterB", serif;
   font-size: 3rem;
   letter-spacing: 2px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
 }
 
 main {
@@ -97,14 +115,21 @@ main .container {
 }
 main .container h1 {
   font-family: "InterB", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1000px) {
+  main .container h1 {
+    font-size: 1.6rem;
+  }
+}
 main .container .imgContainer {
-  width: 50%;
-  height: auto;
+  width: 70%;
+  height: 50%;
+  min-width: 250px;
+  min-height: 200px;
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
@@ -118,13 +143,18 @@ main .container .imgContainer #map:hover {
   transform: scale(1.6);
 }
 main .container p {
-  width: 70%;
+  width: 90%;
   margin: 40px auto 0;
 }
 main .beauvais {
   height: 70px;
   background: #737373;
   display: flex;
+}
+@media screen and (max-width: 900px) {
+  main .beauvais {
+    display: none;
+  }
 }
 main .beauvais p {
   text-transform: uppercase;
@@ -172,12 +202,21 @@ main .beauvais ul li:hover a {
 }
 .actualite .father {
   border-top: 2px solid rgb(237, 236, 236);
-  border-bottom: 2px solid rgb(237, 236, 236);
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 1100px) {
+  .actualite .father {
+    display: block;
+  }
+}
 .actualite .father .left-part {
   border-right: 2px solid rgb(237, 236, 236);
+}
+@media screen and (max-width: 1100px) {
+  .actualite .father .right-part {
+    border-top: 2px solid rgb(237, 236, 236);
+  }
 }
 .actualite .father div {
   padding: 40px;
@@ -188,10 +227,10 @@ main .beauvais ul li:hover a {
   padding: 20px 0;
 }
 .actualite .father div .imgContainer {
-  border: 1px solid none;
-  border-radius: 20px;
-  width: 80%;
-  height: 300px;
+  width: 70%;
+  height: 50%;
+  min-width: 300px;
+  min-height: 250px;
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
@@ -213,18 +252,24 @@ main .beauvais ul li:hover a {
   padding: 20px 0;
 }
 .actualite .father div .readMore {
+  bottom: 0;
   width: 95%;
   font-family: "InterL", sans-serif;
   letter-spacing: 1px;
   text-align: right;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+}
+.actualite .father div .readMore a {
   color: #afa9a9;
 }
 .actualite .father div .readMore:hover {
   font-size: 1.1rem;
   color: black;
   letter-spacing: 4px;
+}
+.actualite .father div .readMore:hover a {
+  color: black;
 }
 
 .importantDates {
@@ -241,8 +286,18 @@ main .beauvais ul li:hover a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 1100px) {
+  .importantDates .father {
+    display: block;
+  }
+}
 .importantDates .father .left-part {
   border-right: 2px solid rgb(237, 236, 236);
+}
+@media screen and (max-width: 1100px) {
+  .importantDates .father .right-part {
+    border-top: 2px solid rgb(237, 236, 236);
+  }
 }
 .importantDates .father div {
   padding: 40px;
@@ -252,10 +307,10 @@ main .beauvais ul li:hover a {
   padding: 30px 0;
 }
 .importantDates .father div .imgContainer {
-  border: 1px solid none;
-  border-radius: 20px;
-  width: 80%;
-  height: 300px;
+  width: 70%;
+  height: 50%;
+  min-width: 300px;
+  min-height: 250px;
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
@@ -349,7 +404,6 @@ footer form .btn:hover {
   color: rgb(255, 255, 255);
 }
 #navbar li {
-  height: 100%;
   padding: 25px 15px;
   transition: 0.3s;
   cursor: pointer;
@@ -390,4 +444,9 @@ footer form .btn:hover {
 }
 #navbar .left-part li:hover a {
   color: #2e2d2d;
+}
+@media screen and (max-width: 1400px) {
+  #navbar .left-part li, #navbar .left-part i, #navbar .right-part li, #navbar .right-part i {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

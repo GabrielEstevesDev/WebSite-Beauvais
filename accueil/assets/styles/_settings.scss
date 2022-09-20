@@ -44,6 +44,7 @@ body{
 #page{
     width: 80%;
     margin: 0 auto;
+    
 }
 
 .title{
@@ -51,6 +52,9 @@ body{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    @media screen and (max-width:1000px) {
+        font-size: 1.5rem;
+    }
 }
 .sub-title{
     font-family: $font2;
@@ -59,6 +63,11 @@ p{
     color: $black2;
     font-family: $font3;
     line-height: 25px;
+}
+.p1{
+    @media screen and (max-width:800px) {
+        font-size:0.9rem;
+    }
 }
 .btn {
     width: 180px;
