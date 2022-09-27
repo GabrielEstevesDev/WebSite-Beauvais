@@ -2,8 +2,11 @@
     background: $white1;
     margin-bottom: 50px;
     .title{
-        padding: 50px 0 30px;
+        padding: 30px;
         text-align: center;
+    }
+    .sub-title{
+        padding-top:  20px;;
     }
     .father{
         border-top: 2px solid rgb(237, 236, 236);
@@ -21,7 +24,6 @@
             }
         }
         div{
-            padding: 40px;
             text-align: center;
             .date {
                 font-family: $font4;
@@ -29,9 +31,9 @@
             }
             .imgContainer{
                 width: 70%;
-                height: 50%;
+                height: 45%;
                 min-width: 300px;
-                min-height: 250px;
+                min-height: 200px;
                 padding: 0;
                 margin: 0 auto;
                 overflow: hidden;
@@ -47,13 +49,13 @@
                 }
             }
             .p1 {
-                width: 90%;
+                width: 80%;
                 margin: 0 auto;
                 text-align: left;
                 padding: 20px 0;
             }
             .readMore{
-                bottom: 0;
+                margin-bottom: 30px;
                 width: 95%;
                 font-family: $font2;
                 letter-spacing: 1px;

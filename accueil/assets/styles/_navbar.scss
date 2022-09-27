@@ -15,17 +15,26 @@
         transition: 0.3s;
         cursor: pointer;
     }
-    .right-part {
-        display: flex;
-        i{
-            font-size: 1.5rem;
-            transition: 0.3s;
-            &:hover{
-                transform: scale(1.3);
-            }
+    #logo img{
+        display: none;
+        @media screen and (max-width:900px) {
+            display: block;
+            height: 74px;
+            width: 130px;
         }
     }
-    .left-part {
+    .toogle{
+        font-size: 1.3rem;
+        color: white;
+        display: none;
+        @media screen and (max-width:900px) {
+            display: block;
+        }
+    }
+    .contact {
+        display: flex;
+    }
+    .left {
         display: flex;
         &:hover li:not(:hover){
             background: none;
@@ -53,11 +62,80 @@
             
      }
     }
-    .left-part, .right-part{
+    .right{
+        display: flex;
+        font-size: 1.4rem;
+        li{
+            padding: 25px;
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         @media screen and (max-width: 1400px) {
             li,i{
                 font-size: 1rem;
             }
          }
+    } 
+}
+@media screen and (max-width:900px){
+    .toogle{
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+    }
+    #navbar {
+        position: relative;
+        a{
+            color: $black1;
+        }
+        .logo img{
+            height: 80px;
+            display: block;
+        }
+    }
+    
+    .menu{
+        z-index: 10;
+        position: absolute;
+        top: 78PX;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(200%);
+        transition: 1s ;
+        .left{
+            flex-direction: column;
+            li{
+                border-bottom: 2px solid $grey1;
+            }
+        }
+        .right{
+            background: $white1;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+    .ouvrir{
+        display: block;
+    }
+    .fermer{
+        display: none;
+    }
+    .open .ouvrir{
+        display: none;
+
+    }
+    .open .fermer {
+        display: block;
+    }
+    .open .menu{
+        transform: translateX(0);
     }
 }

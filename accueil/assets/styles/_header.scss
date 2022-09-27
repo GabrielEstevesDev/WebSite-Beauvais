@@ -1,5 +1,8 @@
 header{
-    min-height: 90vh;
+    min-height: 100vh;
+    @media screen and (max-width:900px) {
+        display: none;
+    }
     img {
         display: block;
         margin: 0 auto;
