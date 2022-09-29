@@ -1,6 +1,9 @@
 main {
     background: $white1;
     margin-bottom: 50px;
+    @media screen and (max-width:900px) {
+        padding-top: 50px;
+    }
     .container {
         padding: 60px;
         text-align: center;

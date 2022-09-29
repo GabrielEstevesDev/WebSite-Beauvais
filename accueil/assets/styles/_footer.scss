@@ -36,12 +36,12 @@ footer {
             transition: 0.4s ease-in-out;
             cursor: pointer;
             letter-spacing: 1px;
+            box-shadow: 2px 1px 8px 7px rgba(28, 26, 29, 0.71);
             &:hover{
                 transform: scale(1.05);
                 background: $black1;
                 color: $white1;
-                letter-spacing: 2px;
-                box-shadow: 2px 1px 8px 7px rgba(28, 26, 29, 0.71);
+                
             }
         }
     }

@@ -28,6 +28,9 @@ $grey2 : #afa9a9;
     margin: 0;
     padding: 0;
 }
+body{
+    background: url(../img/bg.png) fixed center/cover;
+}
 li{
     list-style: none;
 }
@@ -38,12 +41,12 @@ li,a,i {
     transition: 0.4s ease-in-out;
     cursor: pointer;
 }
-body{
-    background: url(../img/bg.png) fixed center/cover;
-}
 #page{
     width: 80%;
     margin: 0 auto;
+    @media screen and (max-width:900px) {
+        width: 90%;
+    }
 }
 .title{
     font-family: $font1;
