@@ -1,7 +1,7 @@
-@import "./_settings";
-@import "./_header";
-@import "./_main";
-@import "./actualites";
-@import "./dates";
-@import "./footer";
-@import "./_navbar.scss"
+@import "./layouts/_settings";
+@import "./layouts/_header";
+@import "./layouts/_main";
+@import "./layouts/actualites";
+@import "./layouts/dates";
+@import "./layouts/footer";
+@import "./layouts/_navbar.scss"

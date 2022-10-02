@@ -67,9 +67,8 @@ p {
   font-family: "OpenL", sans-serif;
   line-height: 25px;
 }
-
 @media screen and (max-width: 800px) {
-  .p1 {
+  p {
     font-size: 0.9rem;
   }
 }
@@ -157,33 +156,29 @@ main .container .imgContainer {
   min-height: 200px;
   padding: 0;
   margin: 0 auto;
-  overflow: hidden;
 }
 main .container .imgContainer #map {
   height: 100%;
   width: 100%;
   min-width: 300px;
   min-height: 200px;
-  transition: 0.9s ease-in-out;
-}
-main .container .imgContainer #map:hover {
-  transform: scale(1.6);
 }
 main .container p {
   width: 90%;
   margin: 40px auto 0;
 }
-main .beauvais {
+main .navBeauvais {
   height: 70px;
   background: #737373;
   display: flex;
+  font-family: "InterL", sans-serif;
 }
 @media screen and (max-width: 900px) {
-  main .beauvais {
+  main .navBeauvais {
     display: none;
   }
 }
-main .beauvais p {
+main .navBeauvais p {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -194,28 +189,28 @@ main .beauvais p {
   align-items: center;
   border-right: 2px solid black;
 }
-main .beauvais ul {
+main .navBeauvais ul {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .beauvais ul li {
+main .navBeauvais ul li {
   display: flex;
   align-items: center;
   height: 100%;
   font-size: 0.8rem;
   padding: 0 15px;
 }
-main .beauvais ul li a {
+main .navBeauvais ul li a {
   text-transform: uppercase;
   color: white;
 }
-main .beauvais ul li:hover {
+main .navBeauvais ul li:hover {
   background: white;
 }
-main .beauvais ul li:hover a {
+main .navBeauvais ul li:hover a {
   color: #737373;
 }
 
@@ -381,6 +376,7 @@ footer .title {
   padding: 40px 0 20px;
 }
 footer form {
+  font-family: "OpenL", sans-serif;
   width: 300px;
   margin: 0 auto;
 }
@@ -421,6 +417,7 @@ footer form .btn:hover {
 
 #navbar {
   z-index: 1000;
+  font-family: "InterB", serif;
   background: rgba(66, 66, 66, 0.322);
   width: 80%;
   margin: 0 auto;
