@@ -1,3 +1,5 @@
+/************************PARAMETRES GENERAUX DE LA PAGE D'ACCUEIL******************/
+/***************************POLICES*****************************/
 @font-face {
   font-family: "InterB";
   src: url(../../../fonts/Inter-Bold.ttf);
@@ -14,6 +16,7 @@
   font-family: "MerriI";
   src: url(../../../fonts/Merriweather-LightItalic.ttf);
 }
+/***************************COULEURS***********************/
 * {
   margin: 0;
   padding: 0;
@@ -94,6 +97,7 @@ p {
   color: black;
 }
 
+/************************FICHIER SCSS QUI COMPORTE LE STYLE DU HEADER******/
 header {
   min-height: 100vh;
 }
@@ -125,6 +129,7 @@ header h1 {
   }
 }
 
+/************************FICHIER SCSS QUI COMPORTE LE STYLE DU MAIN******/
 main {
   background: white;
   margin-bottom: 50px;
@@ -225,6 +230,7 @@ main .navBeauvais ul li:hover a {
   color: #737373;
 }
 
+/************************FICHIER SCSS QUI COMPORTE LE STYLE DE LA SECTION CLASS="actualite"******/
 .actualite {
   background: white;
   margin-bottom: 50px;
@@ -307,6 +313,7 @@ main .navBeauvais ul li:hover a {
   color: black;
 }
 
+/************************FICHIER SCSS QUI COMPORTE LE STYLE DE LA SECTION CLASS="importantDates"******/
 .importantDates {
   background: white;
   margin-bottom: 50px;
@@ -377,6 +384,7 @@ main .navBeauvais ul li:hover a {
   background: #2e2d2d;
 }
 
+/************************FICHIER SCSS QUI COMPORTE LE STYLE DU FOOTER******/
 footer {
   background: white;
   padding-bottom: 30px;

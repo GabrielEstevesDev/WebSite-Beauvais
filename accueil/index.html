@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA COMMUNAUTÉ D'AGGLOMÉRATION DU BEAUVAISIS - ACCUEIL</title>
     <link rel="stylesheet" href="./assets/styles/index.css">
+    <!--fichier css compilé par le SASS-->
     <link rel="stylesheet" href="../navbar.css">
+    <!--fichier css commun à toutes les pages pour la navbar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--librairie font awesome pour les icones-->
+    <script src="./assets/js/srcipt.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/logo beauvaisis.png" alt="" class="logo-beauvaisis">
+        <img src="./assets/img/logo beauvaisis.png" alt="logo-beauvaisis" class="logo-beauvaisis">
         <h1><i class="fa-solid fa-quote-left"></i> Ensemble, sur la route de votre avenir <i
                 class="fa-solid fa-quote-right"></i></h1>
     </header>
@@ -25,12 +29,14 @@
         </div>
         <div class="menu">
             <ul class="left">
+                <!--les 4 pages du site-->
                 <li><a href="../accueil/index.html">accueil</a></li>
                 <li><a href="../leo/Actualites.html">actualités</a></li>
                 <li><a href="../tourisme/Tourisme.html">tourisme & culture</a></li>
                 <li><a href="../yvann/index.html">logement & études</a></li>
             </ul>
             <ul class="right">
+                <!--lien résaux sociaux-->
                 <li><a href="https://fr-fr.facebook.com/beauvaisis/" target="_blank"><i
                             class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="https://twitter.com/agglobeauvaisis" target="_blank"><i
@@ -38,15 +44,16 @@
                 <li><a href="https://fr.linkedin.com/company/communaute-d-agglomeration-du-beauvaisis"
                         target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
-
         </div>
         <ul class="toogle">
+            <!--bars pour la navbar version mobile-->
             <li class="ouvrir"><i class="fa-solid fa-bars"></i></li>
             <li class="fermer"><i class="fa-solid fa-circle-xmark"></i></li>
         </ul>
     </nav>
     <section id="page">
         <main>
+            <!--partie principale du site-->
             <div class="container">
                 <h1>LA COMMUNAUTÉ D'AGGLOMÉRATION
                     DU BEAUVAISIS</h1>
@@ -60,7 +67,8 @@
                 </p>
             </div>
             <nav class="navBeauvais">
-                <img src="./assets/img/logo beauvais.png" alt="" class="logoBeauvais">
+                <!--navbar pour beauvais-->
+                <img src="./assets/img/logo beauvais.png" alt="logo de Beauvais" class="logoBeauvais">
                 <p>à lire sur beauvais</p>
                 <ul>
                     <li><a href="http://www.beauvais.fr/economie-emploi/offres-d-emploi-de-la-mairie.html"
@@ -78,6 +86,7 @@
             </nav>
         </main>
         <section class="actualite">
+            <!--section contenant 2 actualités principales du site-->
             <div class="container">
                 <h1 class="title">L'ACTUALITÉ EN BREF</h1>
                 <div class="father">
@@ -117,6 +126,7 @@
         </section>
         </div>
         <section class="importantDates">
+            <!--section contenant 2 dates importantes-->
             <div class="container">
                 <h1 class="title">DES DATES IMPORTANTES</h1>
                 <div>
@@ -159,20 +169,21 @@
         <footer>
             <h1 class="title">nous contacter</h1>
             <form action="#">
+                <!--formulaire de contact-->
                 <label for="firstname">prénom</label>
                 <input type="text" id="firstname" placeholder="Jean">
                 <label for="name">nom</label>
                 <input type="text" id="name" placeholder="Dupont">
                 <label for="email">email</label>
-                <input type="text" id="name" placeholder="exemple@gmail.com">
+                <input type="text" id="email" placeholder="exemple@gmail.com">
                 <label for="message">message</label>
                 <textarea name="message" id="message" cols="30" rows="10"
                     placeholder="écrivez votre message ici"></textarea>
+                <div id="msg"></div>
                 <button class="btn" type="submit">envoyer</button>
             </form>
         </footer>
     </section>
-    <script src="./assets/js/srcipt.js"></script>
 </body>
 
 </html>
